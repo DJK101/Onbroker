@@ -81,13 +81,13 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   
   Branch _jZ9z61OlEe2KQc5QIsW97w at 350,300 size 120,25 {
   	name "Create issue"
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (409,399) (490,399) (490,205) decorate "" at (0,0) {
-  		id _pYeZsFOlEe2KQc5QIsW97w
+  	-ControlFlow-> _OcV-wVoZEe2mWqj9P9fyYQ  decorate "" at (0,0) {
+  		id _O3N84VoZEe2mWqj9P9fyYQ
   		concurrent true
   	}
   }
   
-  Documentation _jZ9z8FOlEe2KQc5QIsW97w at 350,360 size 52,40 {
+  Documentation _jZ9z8FOlEe2KQc5QIsW97w at 618,440 size 52,40 {
   	content "TODO"
   }
   
@@ -121,7 +121,7 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	content "TODO"
   }
   
-  Branch _Afrl0VOmEe2KQc5QIsW97w at 330,140 size 120,25 {
+  Branch _Afrl0VOmEe2KQc5QIsW97w at 335,140 size 120,25 {
   	name "Back"
   	-ControlFlow-> _BCILkVOmEe2KQc5QIsW97w  decorate "" at (0,0) {
   		id _BUzP8VOmEe2KQc5QIsW97w
@@ -131,5 +131,42 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   
   EndSIB _BCILkVOmEe2KQc5QIsW97w at 490,70 size 100,65 {
   	branchName "back"
+  }
+  
+  GUISIB _OcV-wVoZEe2mWqj9P9fyYQ at 374,365 size 120,65 {
+  	cacheGUI false
+  	majorPage true
+  	libraryComponentUID "_uy8IEVoYEe2mWqj9P9fyYQ"
+  	name "CreateComment"
+  	label "CreateComment"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _OcuZQVoZEe2mWqj9P9fyYQ   {
+  		id _OcvnYVoZEe2mWqj9P9fyYQ
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _OdCiUVoZEe2mWqj9P9fyYQ   {
+  		id _OdDJYVoZEe2mWqj9P9fyYQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _OcuZQVoZEe2mWqj9P9fyYQ at 280,440 size 120,68 {
+  	name "Submit"
+  	PrimitiveOutputPort _OcyDoVoZEe2mWqj9P9fyYQ at 5,27 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "title"
+  	}
+  	
+  	PrimitiveOutputPort _Oc9CwVoZEe2mWqj9P9fyYQ at 5,45 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "comments"
+  	}
+  }
+  
+  Branch _OdCiUVoZEe2mWqj9P9fyYQ at 454,440 size 120,25 {
+  	name "Back"
   }
 }
