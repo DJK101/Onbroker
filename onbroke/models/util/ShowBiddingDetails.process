@@ -32,11 +32,6 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   		isList false
   		name "bidding"
   	}
-  	-BranchConnector-> _jZ9z61OlEe2KQc5QIsW97w via (250,280) (410,280)  {
-  		id _lbr0AVOlEe2KQc5QIsW97w
-  		concurrent true
-  	}
-  	
   	-BranchConnector-> _jZ9M2VOlEe2KQc5QIsW97w via (250,280) (610,280)  {
   		id _lwXqkVOlEe2KQc5QIsW97w
   		concurrent true
@@ -54,6 +49,11 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	
   	-BranchConnector-> _Afrl0VOmEe2KQc5QIsW97w   {
   		id _Afsz8VOmEe2KQc5QIsW97w
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _A-CmwFo-Ee2mWqj9P9fyYQ   {
+  		id _A-PbEVo-Ee2mWqj9P9fyYQ
   		concurrent true
   	}
   }
@@ -79,15 +79,7 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	}
   }
   
-  Branch _jZ9z61OlEe2KQc5QIsW97w at 350,300 size 120,25 {
-  	name "Create issue"
-  	-ControlFlow-> _OcV-wVoZEe2mWqj9P9fyYQ  decorate "" at (0,0) {
-  		id _O3N84VoZEe2mWqj9P9fyYQ
-  		concurrent true
-  	}
-  }
-  
-  Documentation _jZ9z8FOlEe2KQc5QIsW97w at 618,440 size 52,40 {
+  Documentation _jZ9z8FOlEe2KQc5QIsW97w at 270,321 size 52,40 {
   	content "TODO"
   }
   
@@ -133,7 +125,7 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	branchName "back"
   }
   
-  GUISIB _OcV-wVoZEe2mWqj9P9fyYQ at 374,365 size 120,65 {
+  GUISIB _OcV-wVoZEe2mWqj9P9fyYQ at 350,360 size 120,65 {
   	cacheGUI false
   	majorPage true
   	libraryComponentUID "_uy8IEVoYEe2mWqj9P9fyYQ"
@@ -151,22 +143,122 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	}
   }
   
-  Branch _OcuZQVoZEe2mWqj9P9fyYQ at 280,440 size 120,68 {
+  Branch _OcuZQVoZEe2mWqj9P9fyYQ at 350,450 size 120,68 {
   	name "Submit"
   	PrimitiveOutputPort _OcyDoVoZEe2mWqj9P9fyYQ at 5,27 size 110,18 {
   		dataType Text
   		isList false
   		name "title"
+  		-PrimitiveDirectDataFlow-> _bn-C0VoqEe2mWqj9P9fyYQ via (340,486) (270,486) (270,670) decorate "" at (0,0) {
+  			id _c9xYIVoqEe2mWqj9P9fyYQ
+  			dfViewWorkaround true
+  		}
   	}
   	
   	PrimitiveOutputPort _Oc9CwVoZEe2mWqj9P9fyYQ at 5,45 size 110,18 {
   		dataType Text
   		isList false
   		name "comments"
+  		-PrimitiveDirectDataFlow-> _e1kAMVoqEe2mWqj9P9fyYQ via (116,502) (116,601) decorate "" at (0,0) {
+  			id _foYkQVoqEe2mWqj9P9fyYQ
+  			dfViewWorkaround true
+  		}
   	}
   }
   
-  Branch _OdCiUVoZEe2mWqj9P9fyYQ at 454,440 size 120,25 {
+  Branch _OdCiUVoZEe2mWqj9P9fyYQ at 190,380 size 120,25 {
   	name "Back"
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w  decorate "" at (0,0) {
+  		id _kW_BYVoqEe2mWqj9P9fyYQ
+  		concurrent true
+  	}
+  }
+  
+  CreateSIB _a5jdoVoqEe2mWqj9P9fyYQ at 280,540 size 120,144 {
+  	libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
+  	label "Create Issue"
+  	ignoredBranch [  ]
+  	PrimitiveInputPort _a6IscVoqEe2mWqj9P9fyYQ at 5,67 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "internalName"
+  	}
+  	
+  	ComplexInputPort _bnJjcVoqEe2mWqj9P9fyYQ at 5,85 size 110,18 {
+  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  		isList true
+  		name "comments"
+  	}
+  	
+  	ComplexInputPort _bnZbEVoqEe2mWqj9P9fyYQ at 5,103 size 110,18 {
+  		libraryComponentUID "_MZz8sVN-Ee2KQc5QIsW97w"
+  		isList false
+  		name "state"
+  	}
+  	
+  	PrimitiveInputPort _bn-C0VoqEe2mWqj9P9fyYQ at 5,121 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "title"
+  	}
+  	-BranchConnector-> _a6TrkVoqEe2mWqj9P9fyYQ   {
+  		id _a6VgwVoqEe2mWqj9P9fyYQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _a6TrkVoqEe2mWqj9P9fyYQ at 431,587 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _a6ZyMVoqEe2mWqj9P9fyYQ at 5,27 size 110,18 {
+  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
+  		isList false
+  		name "created"
+  	}
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (491,723) (88,723) (88,461) decorate "" at (0,0) {
+  		id _lxsE0VoqEe2mWqj9P9fyYQ
+  		concurrent true
+  	}
+  }
+  
+  CreateSIB _eWuIEVoqEe2mWqj9P9fyYQ at 126,507 size 120,108 {
+  	libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  	label "Create Comment"
+  	ignoredBranch [  ]
+  	PrimitiveInputPort _eWyZgVoqEe2mWqj9P9fyYQ at 5,67 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "internalName"
+  	}
+  	
+  	PrimitiveInputPort _e1kAMVoqEe2mWqj9P9fyYQ at 5,85 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "text"
+  	}
+  	-BranchConnector-> _eXI-0VoqEe2mWqj9P9fyYQ   {
+  		id _eXLbEVoqEe2mWqj9P9fyYQ
+  		concurrent true
+  	}
+  }
+  
+  Branch _eXI-0VoqEe2mWqj9P9fyYQ at 130,656 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _eXMpMVoqEe2mWqj9P9fyYQ at 5,27 size 110,18 {
+  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  		isList false
+  		name "created"
+  		-ComplexDirectDataFlow-> _bnJjcVoqEe2mWqj9P9fyYQ via (120,692) (116,634) decorate "" at (0,0) {
+  			id _gmE7kVoqEe2mWqj9P9fyYQ
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  Branch _A-CmwFo-Ee2mWqj9P9fyYQ at 350,310 size 120,25 {
+  	name "Create issue"
+  	-ControlFlow-> _OcV-wVoZEe2mWqj9P9fyYQ  decorate "" at (0,0) {
+  		id _BljSsFo-Ee2mWqj9P9fyYQ
+  		concurrent true
+  	}
   }
 }

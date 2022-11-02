@@ -47,7 +47,7 @@ GUI _uy8IEVoYEe2mWqj9P9fyYQ {
   	}
   }
   
-  Template _uzHuQVoYEe2mWqj9P9fyYQ at 240,10 size 370,670 {
+  Template _uzHuQVoYEe2mWqj9P9fyYQ at 240,10 size 290,610 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _uzN04FoYEe2mWqj9P9fyYQ {
@@ -56,7 +56,7 @@ GUI _uy8IEVoYEe2mWqj9P9fyYQ {
   			attributes [  ]
   			marginTop None
   		}
-  	Row _uzPDAVoYEe2mWqj9P9fyYQ at 10,270 size 270,370 {
+  	Row _uzPDAVoYEe2mWqj9P9fyYQ at 10,210 size 270,370 {
   		generalStyle GeneralStyling _uze6oFoYEe2mWqj9P9fyYQ {
   				tallness Fitting
   				marginBottom None
@@ -205,7 +205,7 @@ GUI _uy8IEVoYEe2mWqj9P9fyYQ {
   		}
   	}
   	
-  	Row _xJtyMVoYEe2mWqj9P9fyYQ at 10,30 size 350,230 {
+  	Row _xJtyMVoYEe2mWqj9P9fyYQ at 10,30 size 250,170 {
   		generalStyle GeneralStyling _xJtyUFoYEe2mWqj9P9fyYQ {
   				tallness Fitting
   				marginBottom Double
@@ -218,7 +218,7 @@ GUI _uy8IEVoYEe2mWqj9P9fyYQ {
   		MoveDown _xJtyVVoYEe2mWqj9P9fyYQ at 2,10 size 14,7 {
   		}
   		
-  		Col _xJtyWFoYEe2mWqj9P9fyYQ at 10,30 size 320,180 {
+  		Col _xJtyWFoYEe2mWqj9P9fyYQ at 10,30 size 220,120 {
   			wideness Full
   			layout Layout _xJuZQ1oYEe2mWqj9P9fyYQ {
   					size Default
@@ -237,28 +237,7 @@ GUI _uy8IEVoYEe2mWqj9P9fyYQ {
   			MoveRight _xJuZSFoYEe2mWqj9P9fyYQ at 10,2 size 7,14 {
   			}
   			
-  			Headline _xJuZS1oYEe2mWqj9P9fyYQ at 10,30 size 300,50 {
-  				size Small
-  				content [ StaticContent _xJuZUVoYEe2mWqj9P9fyYQ {
-  						renderMarkdown false
-  						maxChars 0
-  						html false
-  						rawContent "Bidding for: {{bidding.offer.title}}"
-  					} ]
-  				generalStyle GeneralStyling _xJuZUFoYEe2mWqj9P9fyYQ {
-  						tallness Fitting
-  						marginBottom None
-  						attributes [  ]
-  						marginTop None
-  					}
-  				MoveUp _xJuZU1oYEe2mWqj9P9fyYQ at 2,2 size 14,7 {
-  				}
-  				
-  				MoveDown _xJuZVloYEe2mWqj9P9fyYQ at 2,10 size 14,7 {
-  				}
-  			}
-  			
-  			Button _xJuZWloYEe2mWqj9P9fyYQ at 10,90 size 200,60 {
+  			Button _xJuZWloYEe2mWqj9P9fyYQ at 10,30 size 200,60 {
   				displayLabel "Back"
   				label "Back"
   				styling ButtonStyling _xJuZYVoYEe2mWqj9P9fyYQ {
