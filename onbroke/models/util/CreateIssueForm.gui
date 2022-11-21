@@ -4,7 +4,7 @@ GUI _qs8t8GAJEe2S6JM4Hx8SJw {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "CreateIssueForm"
-  DataContext _qvVTkGAJEe2S6JM4Hx8SJw at 10,10 size 180,105 {
+  DataContext _qvVTkGAJEe2S6JM4Hx8SJw at 20,240 size 180,105 {
   	dfViewWorkaround true
   	PrimitiveVariable _wBXN4WAJEe2S6JM4Hx8SJw at 10,50 size 140,25 {
   		dataType Text
@@ -51,7 +51,7 @@ GUI _qs8t8GAJEe2S6JM4Hx8SJw {
   					fullWidth false
   					size Default
   					disabled false
-  					color Default
+  					color Green
   				}
   			options ButtonOptions _sBSqsGAJEe2S6JM4Hx8SJw {
   					isLink false

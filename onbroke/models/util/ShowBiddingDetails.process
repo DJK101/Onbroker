@@ -4,28 +4,33 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   dataFlowView true
   processType Basic
   isStateful false
-  StartSIB _VLMoEVOlEe2KQc5QIsW97w at 200,30 size 100,90 {
+  StartSIB _VLMoEVOlEe2KQc5QIsW97w at 200,-130 size 100,90 {
   	ComplexOutputPort _awmKUVOlEe2KQc5QIsW97w at 5,67 size 90,18 {
   		libraryComponentUID "_FSL-oVFNEe2J0bu3ffrh5w"
   		isList false
   		name "bidding"
-  		-ComplexDirectDataFlow-> _Yur88VOlEe2KQc5QIsW97w via (180,106) (180,236) decorate "" at (0,0) {
+  		-ComplexDirectDataFlow-> _Yur88VOlEe2KQc5QIsW97w via (180,-54) (180,236) decorate "" at (0,0) {
   			id _bHZgwVOlEe2KQc5QIsW97w
   			dfViewWorkaround true
   		}
   		
-  		-ComplexDirectDataFlow-> _kyH-MWAdEe2S6JM4Hx8SJw via (146,106) (146,984) decorate "" at (0,0) {
-  			id _uCNCcWAdEe2S6JM4Hx8SJw
+  		-ComplexDirectDataFlow-> _cd8nEWBVEe22r-rMCqBFnw via (145,-54) (145,473) decorate "" at (0,0) {
+  			id _dtaq4WBVEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
+  		
+  		-ComplexDirectDataFlow-> _WktLQWDjEe22r-rMCqBFnw via (180,-54) (180,66) decorate "" at (0,0) {
+  			id _ZXn-0WDjEe22r-rMCqBFnw
   			dfViewWorkaround true
   		}
   	}
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w  decorate "" at (0,0) {
-  		id _bWLjoVOlEe2KQc5QIsW97w
+  	-ControlFlow-> _WknrsWDjEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _Y1_4cWDjEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  GUISIB _Yuo5oVOlEe2KQc5QIsW97w at 190,160 size 120,90 {
+  GUISIB _Yuo5oVOlEe2KQc5QIsW97w at 190,160 size 120,108 {
   	cacheGUI false
   	majorPage true
   	libraryComponentUID "_zSAVgVOjEe2KQc5QIsW97w"
@@ -37,22 +42,28 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   		isList false
   		name "bidding"
   	}
-  	-BranchConnector-> _jZ9z61OlEe2KQc5QIsW97w via (250,280) (410,280)  {
+  	
+  	PrimitiveInputPort _aRN5QWDjEe22r-rMCqBFnw at 5,85 size 110,18 {
+  		dataType Boolean
+  		isList false
+  		name "showResolveButtons"
+  	}
+  	-BranchConnector-> _jZ9z61OlEe2KQc5QIsW97w via (376,204) (376,280)  {
   		id _lbr0AVOlEe2KQc5QIsW97w
   		concurrent true
   	}
   	
-  	-BranchConnector-> _jZ9M2VOlEe2KQc5QIsW97w via (250,280) (610,280)  {
+  	-BranchConnector-> _jZ9M2VOlEe2KQc5QIsW97w via (375,238) (609,238)  {
   		id _lwXqkVOlEe2KQc5QIsW97w
   		concurrent true
   	}
   	
-  	-BranchConnector-> _jZ-a_lOlEe2KQc5QIsW97w via (250,280) (810,280)  {
+  	-BranchConnector-> _jZ-a_lOlEe2KQc5QIsW97w via (346,258) (376,258) (838,258) (838,284)  {
   		id _maxScVOlEe2KQc5QIsW97w
   		concurrent true
   	}
   	
-  	-BranchConnector-> _jZ-a8VOlEe2KQc5QIsW97w via (250,280) (1010,280)  {
+  	-BranchConnector-> _jZ-a8VOlEe2KQc5QIsW97w via (347,282) (839,282) (1058,282)  {
   		id _m7KpwVOlEe2KQc5QIsW97w
   		concurrent true
   	}
@@ -63,66 +74,61 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	}
   }
   
-  Documentation _jZ9M0VOlEe2KQc5QIsW97w at 750,360 size 52,40 {
-  	content "TODO"
-  }
-  
-  Documentation _jZ9M1VOlEe2KQc5QIsW97w at 950,360 size 52,40 {
-  	content "TODO"
-  }
-  
   Branch _jZ9M2VOlEe2KQc5QIsW97w at 550,300 size 120,50 {
   	name "Show issue"
   	ComplexOutputPort _jZ9z4lOlEe2KQc5QIsW97w at 5,27 size 110,18 {
   		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
   		isList false
   		name "issue"
-  		-ComplexDirectDataFlow-> _ZGd-cWAUEe2S6JM4Hx8SJw via (540,336) (540,477) decorate "" at (0,0) {
-  			id _ZqIFIWAUEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  		
-  		-ComplexDirectDataFlow-> _KUkJB2AXEe2S6JM4Hx8SJw via (532,340) (532,1280) decorate "" at (0,0) {
-  			id _UHYt8WAXEe2S6JM4Hx8SJw
+  		-ComplexDirectDataFlow-> _H4rIAWBcEe22r-rMCqBFnw via (540,336) (540,473) decorate "" at (0,0) {
+  			id _I9Kq4WBcEe22r-rMCqBFnw
   			dfViewWorkaround true
   		}
   	}
-  	-ControlFlow-> _qOxOEGASEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _qiZUsWASEe2S6JM4Hx8SJw
+  	-ControlFlow-> _H4orwWBcEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _ImwWAWBcEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  Branch _jZ9z61OlEe2KQc5QIsW97w at 350,300 size 120,25 {
+  Branch _jZ9z61OlEe2KQc5QIsW97w at 316,312 size 120,25 {
   	name "Create issue"
-  	-ControlFlow-> _3tJ04WAJEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _395moWAJEe2S6JM4Hx8SJw
+  	-ControlFlow-> _cdn28WBVEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _czCGQWBVEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  Branch _jZ-a8VOlEe2KQc5QIsW97w at 950,300 size 120,50 {
+  Branch _jZ-a8VOlEe2KQc5QIsW97w at 1000,300 size 120,50 {
   	name "Unresolve issue"
   	ComplexOutputPort _jZ-a9VOlEe2KQc5QIsW97w at 5,27 size 110,18 {
   		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
   		isList false
   		name "issue"
+  		-ComplexDirectDataFlow-> _K-OuQWBdEe22r-rMCqBFnw via (990,336) (990,473) decorate "" at (0,0) {
+  			id _LfQ-wWBdEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
   	}
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (1010,399) (1090,399) (1090,205) decorate "" at (0,0) {
-  		id _vWDLYVOlEe2KQc5QIsW97w
+  	-ControlFlow-> _K-NgIWBdEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _LN1QgWBdEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  Branch _jZ-a_lOlEe2KQc5QIsW97w at 750,300 size 120,50 {
+  Branch _jZ-a_lOlEe2KQc5QIsW97w at 780,300 size 120,50 {
   	name "Resolve issue"
   	ComplexOutputPort _jZ-bAlOlEe2KQc5QIsW97w at 5,27 size 110,18 {
   		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
   		isList false
   		name "issue"
+  		-ComplexDirectDataFlow-> _lVwREGBcEe22r-rMCqBFnw via (770,336) (769,472) decorate "" at (0,0) {
+  			id _l__g4WBcEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
   	}
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (810,400) (890,400) (890,205) decorate "" at (0,0) {
-  		id _tYOz0VOlEe2KQc5QIsW97w
+  	-ControlFlow-> _lVub4WBcEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _ltA6gWBcEe22r-rMCqBFnw
   		concurrent true
   	}
   }
@@ -135,395 +141,130 @@ Process _U_pfYVOlEe2KQc5QIsW97w {
   	}
   }
   
-  EndSIB _BCILkVOmEe2KQc5QIsW97w at 490,70 size 100,65 {
+  EndSIB _BCILkVOmEe2KQc5QIsW97w at 500,120 size 100,65 {
   	branchName "back"
   }
   
-  GUISIB _3tJ04WAJEe2S6JM4Hx8SJw at 350,383 size 120,65 {
-  	cacheGUI false
-  	majorPage true
-  	libraryComponentUID "_qs8t8GAJEe2S6JM4Hx8SJw"
-  	name "CreateIssueForm"
-  	label "CreateIssueForm"
+  ProcessSIB _H4orwWBcEe22r-rMCqBFnw at 550,397 size 120,90 index 10 {
+  	libraryComponentUID "_tHOwsWBZEe22r-rMCqBFnw"
+  	label "ShowDetailsPage"
   	ignoredBranch [  ]
-  	-BranchConnector-> _3to9EWAJEe2S6JM4Hx8SJw   {
-  		id _3tqLMWAJEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  	
-  	-BranchConnector-> _3tsncWAJEe2S6JM4Hx8SJw   {
-  		id _3ttOgWAJEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _3to9EWAJEe2S6JM4Hx8SJw at 190,403 size 120,25 {
-  	name "Back"
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w  decorate "" at (0,0) {
-  		id _4lvpwWAJEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _3tsncWAJEe2S6JM4Hx8SJw at 350,470 size 120,50 {
-  	name "Submit"
-  	PrimitiveOutputPort _3txf8WAJEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		dataType Text
-  		isList false
-  		name "title"
-  		-PrimitiveDirectDataFlow-> _BcUB0WAKEe2S6JM4Hx8SJw via (340,506) (340,634) decorate "" at (0,0) {
-  			id _B1_GEWAKEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  	-ControlFlow-> __b2l8WAJEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _AYi3sWAKEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  PutComplexToContextSIB _9biUAGAJEe2S6JM4Hx8SJw at 350,730 size 120,90 {
-  	libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  	label "Put Issue"
-  	ignoredBranch [  ]
-  	ComplexInputPort _9buhQWAJEe2S6JM4Hx8SJw at 5,67 size 110,18 {
-  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "in"
-  	}
-  	-BranchConnector-> _9b3EIWAJEe2S6JM4Hx8SJw   {
-  		id _9b6HcWAJEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _9b3EIWAJEe2S6JM4Hx8SJw at 350,830 size 120,50 {
-  	name "success"
-  	ComplexOutputPort _9b8jsWAJEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "out"
-  		-ComplexUpdate-> _ICLik2AKEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  			id _Dr3SgWAeEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  	-ControlFlow-> _kyFh8WAdEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _FPzxgWAeEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  CreateSIB __b2l8WAJEe2S6JM4Hx8SJw at 350,540 size 120,108 {
-  	libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  	label "Create Issue"
-  	ignoredBranch [  ]
-  	PrimitiveInputPort __cF2gWAJEe2S6JM4Hx8SJw at 5,67 size 110,18 {
-  		dataType Text
-  		isList false
-  		name "internalName"
-  	}
-  	
-  	PrimitiveInputPort _BcUB0WAKEe2S6JM4Hx8SJw at 5,85 size 110,18 {
-  		dataType Text
-  		isList false
-  		name "title"
-  	}
-  	-BranchConnector-> __cNyUWAJEe2S6JM4Hx8SJw   {
-  		id __cPAcWAJEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch __cNyUWAJEe2S6JM4Hx8SJw at 350,670 size 120,50 {
-  	name "success"
-  	ComplexOutputPort __cQOkWAJEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "created"
-  		-ComplexDirectDataFlow-> _9buhQWAJEe2S6JM4Hx8SJw via (340,706) (340,806) decorate "" at (0,0) {
-  			id _DPblQWAKEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  	-ControlFlow-> _9biUAGAJEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _C4r5MWAKEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  DataContext _ICS3UGAKEe2S6JM4Hx8SJw at 320,909 size 30,108 {
-  	dfViewWorkaround true
-  	ComplexVariable _ICLik2AKEe2S6JM4Hx8SJw at 10,89 size 10,10 {
-  		expanded false
-  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  		name "issues_B4uGcGAJEe2S6JM4Hx8SJw"
-  		dfViewWorkaround true
-  		isList true
-  		-ComplexRead-> _kyM2sWAdEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  			id _miyqkWAdEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  }
-  
-  GUISIB _qOxOEGASEe2S6JM4Hx8SJw at 550,401 size 120,90 {
-  	cacheGUI false
-  	majorPage true
-  	libraryComponentUID "_HVzS0GAMEe2S6JM4Hx8SJw"
-  	name "DetailsPage"
-  	label "DetailsPage"
-  	ignoredBranch [  ]
-  	ComplexInputPort _ZGd-cWAUEe2S6JM4Hx8SJw at 5,67 size 110,18 {
+  	ComplexInputPort _H4rIAWBcEe22r-rMCqBFnw at 5,67 size 110,18 {
   		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
   		isList false
   		name "issue"
   	}
-  	-BranchConnector-> _qO-pcWASEe2S6JM4Hx8SJw   {
-  		id _qO_QgWASEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  	
-  	-BranchConnector-> _qPBFsWASEe2S6JM4Hx8SJw   {
-  		id _qPBswWASEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  	
-  	-BranchConnector-> _qPDh8WASEe2S6JM4Hx8SJw   {
-  		id _qPEJAWASEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  	
-  	-BranchConnector-> _qPJokWASEe2S6JM4Hx8SJw   {
-  		id _qPKPoWASEe2S6JM4Hx8SJw
+  	-BranchConnector-> _H4uLUWBcEe22r-rMCqBFnw   {
+  		id _H42uMWBcEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  Branch _qO-pcWASEe2S6JM4Hx8SJw at 480,560 size 120,25 {
-  	name "Back"
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (537,204) decorate "" at (0,0) {
-  		id _uzrjsWASEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _qPBFsWASEe2S6JM4Hx8SJw at 607,560 size 120,25 {
-  	name "Add new Comment"
-  	-ControlFlow-> _6oWHwWAWEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _7ZBWwWAWEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _qPDh8WASEe2S6JM4Hx8SJw at 760,548 size 120,50 {
-  	name "Edit"
-  	ComplexOutputPort _qPF-MWASEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "comment"
-  	}
-  	-ControlFlow-> _qOxOEGASEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _xx3zIWASEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _qPJokWASEe2S6JM4Hx8SJw at 900,548 size 120,50 {
-  	name "Delete"
-  	ComplexOutputPort _qPME0WASEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "comment"
-  	}
-  	-ControlFlow-> _qOxOEGASEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _yGtasWASEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  GUISIB _6oWHwWAWEe2S6JM4Hx8SJw at 607,647 size 120,65 {
-  	cacheGUI false
-  	majorPage true
-  	libraryComponentUID "_ovAusWAWEe2S6JM4Hx8SJw"
-  	name "CreateCommentForm"
-  	label "CreateCommentForm"
-  	ignoredBranch [  ]
-  	-BranchConnector-> _6obAQWAWEe2S6JM4Hx8SJw   {
-  		id _6obnUWAWEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  	
-  	-BranchConnector-> _6ogf0WAWEe2S6JM4Hx8SJw   {
-  		id _6oht8WAWEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _6obAQWAWEe2S6JM4Hx8SJw at 480,623 size 120,25 {
-  	name "Back"
-  	-ControlFlow-> _qOxOEGASEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _8NVIkWAWEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch _6ogf0WAWEe2S6JM4Hx8SJw at 607,740 size 120,50 {
-  	name "Submit"
-  	PrimitiveOutputPort _6ojjIWAWEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		dataType Text
-  		isList false
-  		name "comment"
-  		-PrimitiveDirectDataFlow-> _A9GDUWAXEe2S6JM4Hx8SJw via (597,776) (597,895) decorate "" at (0,0) {
-  			id _B73YsWAXEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  	-ControlFlow-> __zsLQWAWEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _AO1PIWAXEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  CreateSIB __zsLQWAWEe2S6JM4Hx8SJw at 607,801 size 120,108 {
-  	libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  	label "Create Comment"
-  	ignoredBranch [  ]
-  	PrimitiveInputPort __zxDwWAWEe2S6JM4Hx8SJw at 5,67 size 110,18 {
-  		dataType Text
-  		isList false
-  		name "internalName"
-  	}
-  	
-  	PrimitiveInputPort _A9GDUWAXEe2S6JM4Hx8SJw at 5,85 size 110,18 {
-  		dataType Text
-  		isList false
-  		name "text"
-  	}
-  	-BranchConnector-> __z3KYWAWEe2S6JM4Hx8SJw   {
-  		id __z4_kWAWEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  Branch __z3KYWAWEe2S6JM4Hx8SJw at 607,942 size 120,50 {
+  Branch _H4uLUWBcEe22r-rMCqBFnw at 550,546 size 120,25 index 11 {
   	name "success"
-  	ComplexOutputPort __z6NsWAWEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "created"
-  		-ComplexDirectDataFlow-> _EDyugWAXEe2S6JM4Hx8SJw via (597,978) (597,1092) decorate "" at (0,0) {
-  			id _F4Rj4WAXEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  	-ControlFlow-> _EDudEWAXEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _FcoJsWAXEe2S6JM4Hx8SJw
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (608,597) (248,598) decorate "" at (0,0) {
+  		id _KZmzsWBcEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  PutComplexToContextSIB _EDudEWAXEe2S6JM4Hx8SJw at 607,1016 size 120,90 {
-  	libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  	label "Put Comment"
+  ProcessSIB _cdn28WBVEe22r-rMCqBFnw at 316,397 size 120,90 index 8 {
+  	libraryComponentUID "_ZCaGkWBQEe22r-rMCqBFnw"
+  	label "ShowCreateIssueBidding"
   	ignoredBranch [  ]
-  	ComplexInputPort _EDyugWAXEe2S6JM4Hx8SJw at 5,67 size 110,18 {
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  	ComplexInputPort _cd8nEWBVEe22r-rMCqBFnw at 5,67 size 110,18 {
+  		libraryComponentUID "_FSL-oVFNEe2J0bu3ffrh5w"
   		isList false
-  		name "in"
+  		name "bidding"
   	}
-  	-BranchConnector-> _ED2Y4WAXEe2S6JM4Hx8SJw   {
-  		id _ED9toWAXEe2S6JM4Hx8SJw
+  	-BranchConnector-> _ceGYEWBVEe22r-rMCqBFnw   {
+  		id _ceHmMWBVEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  Branch _ED2Y4WAXEe2S6JM4Hx8SJw at 607,1116 size 120,50 {
+  Branch _ceGYEWBVEe22r-rMCqBFnw at 316,546 size 120,25 index 9 {
   	name "success"
-  	ComplexOutputPort _ED-7wWAXEe2S6JM4Hx8SJw at 5,27 size 110,18 {
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  		isList false
-  		name "out"
-  		-ComplexUpdate-> _KUlXLGAXEe2S6JM4Hx8SJw via (589,1152) (630,1292) decorate "" at (0,0) {
-  			id _P73IsWAXEe2S6JM4Hx8SJw
-  			dfViewWorkaround true
-  		}
-  	}
-  	-ControlFlow-> _KUkJAWAXEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  		id _O4oxIWAXEe2S6JM4Hx8SJw
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (249,558) decorate "" at (0,0) {
+  		id _dHq5gWBVEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  SetAttributeValueSIB _KUkJAWAXEe2S6JM4Hx8SJw at 682,1200 size 120,108 {
-  	libraryComponentUID "_yDwO8VN9Ee2KQc5QIsW97w"
-  	label "Set comments"
+  ProcessSIB _lVub4WBcEe22r-rMCqBFnw at 780,397 size 120,90 {
+  	libraryComponentUID "_QTqXUWBcEe22r-rMCqBFnw"
+  	label "ShowResolveIssue"
   	ignoredBranch [  ]
-  	ComplexInputPort _KUkJB2AXEe2S6JM4Hx8SJw at 5,67 size 110,18 {
+  	ComplexInputPort _lVwREGBcEe22r-rMCqBFnw at 5,67 size 110,18 {
   		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
   		isList false
   		name "issue"
   	}
-  	
-  	ComplexInputPort _KUkJCmAXEe2S6JM4Hx8SJw at 5,85 size 110,18 {
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  		isList true
-  		name "comments"
-  	}
-  	-BranchConnector-> _KUlXI2AXEe2S6JM4Hx8SJw   {
-  		id _KUl-NGAXEe2S6JM4Hx8SJw
+  	-BranchConnector-> _lV4M4WBcEe22r-rMCqBFnw   {
+  		id _lV4z8WBcEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  Branch _KUlXI2AXEe2S6JM4Hx8SJw at 479,1270 size 120,25 {
-  	name "success"
-  	-ControlFlow-> _qOxOEGASEe2S6JM4Hx8SJw via (537,492) decorate "" at (0,0) {
-  		id _ZPYigWAXEe2S6JM4Hx8SJw
-  		concurrent true
-  	}
-  }
-  
-  SetAttributeValueSIB _kyFh8WAdEe2S6JM4Hx8SJw at 350,909 size 120,108 index 33 {
-  	libraryComponentUID "_3M1ooVN9Ee2KQc5QIsW97w"
-  	label "Set issues"
+  ProcessSIB _K-NgIWBdEe22r-rMCqBFnw at 1001,397 size 120,90 index 14 {
+  	libraryComponentUID "_v8GksWBcEe22r-rMCqBFnw"
+  	label "ShowUnresolveIssue"
   	ignoredBranch [  ]
-  	ComplexInputPort _kyH-MWAdEe2S6JM4Hx8SJw at 5,67 size 110,18 {
+  	ComplexInputPort _K-OuQWBdEe22r-rMCqBFnw at 5,67 size 110,18 {
+  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
+  		isList false
+  		name "issue"
+  	}
+  	-BranchConnector-> _K-QjcWBdEe22r-rMCqBFnw   {
+  		id _K-RKgWBdEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _lV4M4WBcEe22r-rMCqBFnw at 780,546 size 120,25 index 13 {
+  	name "success"
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (840,648) (248,649) decorate "" at (0,0) {
+  		id _n5mG0WBcEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _K-QjcWBdEe22r-rMCqBFnw at 1001,546 size 120,25 {
+  	name "success"
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (1060,704) (248,705) decorate "" at (0,0) {
+  		id _MPSGcWBdEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _WknrsWDjEe22r-rMCqBFnw at 190,-10 size 120,90 {
+  	libraryComponentUID "_rUELYFOfEe2KQc5QIsW97w"
+  	label "UserCanDiscuss"
+  	ignoredBranch [  ]
+  	ComplexInputPort _WktLQWDjEe22r-rMCqBFnw at 5,67 size 110,18 {
   		libraryComponentUID "_V7iG8FGDEe2J0bu3ffrh5w"
   		isList false
   		name "submission"
   	}
-  	
-  	ComplexInputPort _kyM2sWAdEe2S6JM4Hx8SJw at 5,85 size 110,18 {
-  		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
-  		isList true
-  		name "issues"
-  	}
-  	-BranchConnector-> _kyRvMWAdEe2S6JM4Hx8SJw   {
-  		id _kyTkYWAdEe2S6JM4Hx8SJw
+  	-BranchConnector-> _WkxcsWDjEe22r-rMCqBFnw   {
+  		id _Wkxcs2DjEe22r-rMCqBFnw
   		concurrent true
   	}
   }
   
-  DataContext _KUlXKGAXEe2S6JM4Hx8SJw at 652,1200 size 30,116 index 32 {
-  	dfViewWorkaround true
-  	ComplexVariable _KUlXLGAXEe2S6JM4Hx8SJw at 10,89 size 10,10 {
-  		expanded false
-  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
-  		name "comments_B4pN8WAJEe2S6JM4Hx8SJw"
-  		dfViewWorkaround true
-  		isList true
-  		-ComplexRead-> _KUkJCmAXEe2S6JM4Hx8SJw  decorate "" at (0,0) {
-  			id _ioltkWAXEe2S6JM4Hx8SJw
+  Branch _WkxcsWDjEe22r-rMCqBFnw at 190,90 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _Wk0gAWDjEe22r-rMCqBFnw at 5,27 size 110,18 {
+  		dataType Boolean
+  		isList false
+  		name "result"
+  		-PrimitiveDirectDataFlow-> _aRN5QWDjEe22r-rMCqBFnw via (180,126) (180,254) decorate "" at (0,0) {
+  			id _a6ITYWDjEe22r-rMCqBFnw
   			dfViewWorkaround true
   		}
   	}
-  }
-  
-  Branch _kyRvMWAdEe2S6JM4Hx8SJw at 190,950 size 120,25 {
-  	name "success"
-  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w via (181,568) decorate "" at (0,0) {
-  		id _o6048WAdEe2S6JM4Hx8SJw
+  	-ControlFlow-> _Yuo5oVOlEe2KQc5QIsW97w  decorate "" at (0,0) {
+  		id _dVQ5EWDjEe22r-rMCqBFnw
   		concurrent true
   	}
   }

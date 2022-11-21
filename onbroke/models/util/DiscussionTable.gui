@@ -105,12 +105,12 @@ GUI _UOyxYVN9Ee2KQc5QIsW97w {
   		dfViewWorkaround true
   		isList false
   		-IF-> _V3lGkVOdEe2KQc5QIsW97w  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _RlhwoVOfEe2KQc5QIsW97w
+  			id _6-8SIWB_Ee22r-rMCqBFnw
   			negate false
   		}
   		
   		-IF-> _dDPcAVOdEe2KQc5QIsW97w  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _SeVA4VOfEe2KQc5QIsW97w
+  			id _716WYWB_Ee22r-rMCqBFnw
   			negate false
   		}
   	}

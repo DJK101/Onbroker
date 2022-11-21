@@ -1185,9 +1185,9 @@ Process _zn_1sEt2Ee22z989Tp8YUw {
   	}
   }
   
-  DataContext _B4utgWAJEe2S6JM4Hx8SJw at 460,4617 size 30,108 {
+  DataContext _B4utgWAJEe2S6JM4Hx8SJw at 230,4617 size 260,108 {
   	dfViewWorkaround true
-  	ComplexVariable _B4utgmAJEe2S6JM4Hx8SJw at 10,89 size 10,10 {
+  	ComplexVariable _B4utgmAJEe2S6JM4Hx8SJw at 140,33 size 51,66 {
   		expanded false
   		libraryComponentUID "_psj6gVN9Ee2KQc5QIsW97w"
   		name "issues_B4uGcGAJEe2S6JM4Hx8SJw"

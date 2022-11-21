@@ -4,25 +4,25 @@ GUI _ovAusWAWEe2S6JM4Hx8SJw {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "CreateCommentForm"
-  DataContext _ovB80WAWEe2S6JM4Hx8SJw at 10,10 size 180,115 {
+  DataContext _ovB80WAWEe2S6JM4Hx8SJw at 0,270 size 180,115 {
   	dfViewWorkaround true
   	PrimitiveVariable _yxXkcWAWEe2S6JM4Hx8SJw at 10,60 size 140,25 {
   		dataType Text
-  		isInput false
+  		isInput true
   		name "comment"
   		dfViewWorkaround true
   		isList false
-  		-FormSubmit-> _xEhoIWAWEe2S6JM4Hx8SJw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _0zsokWAWEe2S6JM4Hx8SJw
-  		}
-  		
   		-AddPrimitiveToSubmission-> _vA9082AWEe2S6JM4Hx8SJw  decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _1TaqcGAWEe2S6JM4Hx8SJw
+  		}
+  		
+  		-FormLoadSubmit-> _xEhoIWAWEe2S6JM4Hx8SJw  decorate "" at (0,0) decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _3BshcWAnEe2S6JM4Hx8SJw
   		}
   	}
   }
   
-  Template _ovDK8WAWEe2S6JM4Hx8SJw at 240,10 size 240,320 {
+  Template _ovDK8WAWEe2S6JM4Hx8SJw at 210,30 size 270,430 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _ovDyAGAWEe2S6JM4Hx8SJw {
@@ -31,7 +31,7 @@ GUI _ovAusWAWEe2S6JM4Hx8SJw {
   			attributes [  ]
   			marginTop None
   		}
-  	Form _vA7YsWAWEe2S6JM4Hx8SJw at 10,100 size 220,190 {
+  	Form _vA7YsWAWEe2S6JM4Hx8SJw at 10,210 size 220,190 {
   		inline false
   		generalStyle GeneralStyling _vBDUgGAWEe2S6JM4Hx8SJw {
   				tallness Fitting
@@ -51,7 +51,7 @@ GUI _ovAusWAWEe2S6JM4Hx8SJw {
   					fullWidth false
   					size Default
   					disabled false
-  					color Default
+  					color Green
   				}
   			options ButtonOptions _vBBfUGAWEe2S6JM4Hx8SJw {
   					isLink false
@@ -111,33 +111,67 @@ GUI _ovAusWAWEe2S6JM4Hx8SJw {
   		}
   	}
   	
-  	Button _vyIzMWAWEe2S6JM4Hx8SJw at 10,30 size 200,60 {
-  		label "Back"
-  		styling ButtonStyling _vyRWEGAWEe2S6JM4Hx8SJw {
-  				fullWidth false
-  				size Default
-  				disabled false
-  				color Default
-  			}
-  		options ButtonOptions _vyTLQGAWEe2S6JM4Hx8SJw {
-  				isLink false
-  				submitsForm true
-  			}
-  		disabled false
-  		icon Icon _vyNEoGAWEe2S6JM4Hx8SJw {
-  				postIcon None
-  				preIcon None
-  			}
-  		generalStyle GeneralStyling _vyKBUmAWEe2S6JM4Hx8SJw {
+  	Row _Y0sesWAkEe2S6JM4Hx8SJw at 10,30 size 250,170 {
+  		generalStyle GeneralStyling _Y05TAGAkEe2S6JM4Hx8SJw {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
   				marginTop None
   			}
-  		MoveUp _vyJaQWAWEe2S6JM4Hx8SJw at 2,2 size 14,7 {
+  		MoveUp _Y0tFwWAkEe2S6JM4Hx8SJw at 2,2 size 14,7 {
   		}
   		
-  		MoveDown _vyKBUWAWEe2S6JM4Hx8SJw at 2,10 size 14,7 {
+  		MoveDown _Y0ts0WAkEe2S6JM4Hx8SJw at 2,10 size 14,7 {
+  		}
+  		
+  		Col _Y0wwIWAkEe2S6JM4Hx8SJw at 10,30 size 220,120 {
+  			wideness Full
+  			layout Layout _Y02PsGAkEe2S6JM4Hx8SJw {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _Y0ylUGAkEe2S6JM4Hx8SJw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _Y0xXMWAkEe2S6JM4Hx8SJw at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _Y0x-QWAkEe2S6JM4Hx8SJw at 10,2 size 7,14 {
+  			}
+  			
+  			Button _vyIzMWAWEe2S6JM4Hx8SJw at 10,30 size 200,60 {
+  				label "Back"
+  				styling ButtonStyling _vyRWEGAWEe2S6JM4Hx8SJw {
+  						fullWidth false
+  						size Default
+  						disabled false
+  						color Default
+  					}
+  				options ButtonOptions _vyTLQGAWEe2S6JM4Hx8SJw {
+  						isLink false
+  						submitsForm true
+  					}
+  				disabled false
+  				icon Icon _vyNEoGAWEe2S6JM4Hx8SJw {
+  						postIcon None
+  						preIcon None
+  					}
+  				generalStyle GeneralStyling _vyKBUmAWEe2S6JM4Hx8SJw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _vyJaQWAWEe2S6JM4Hx8SJw at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _vyKBUWAWEe2S6JM4Hx8SJw at 2,10 size 14,7 {
+  				}
+  			}
   		}
   	}
   }

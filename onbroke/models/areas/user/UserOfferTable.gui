@@ -193,7 +193,7 @@ GUI _OOS-AVFNEe2J0bu3ffrh5w {
   					disabled false
   					icon Icon _0GQBoFFNEe2J0bu3ffrh5w {
   							postIcon None
-  							preIcon None
+  							preIcon Expand
   						}
   					generalStyle GeneralStyling _0GNlYFFNEe2J0bu3ffrh5w {
   							tallness Fitting
@@ -224,7 +224,7 @@ GUI _OOS-AVFNEe2J0bu3ffrh5w {
   					disabled false
   					icon Icon _4Qgbl1FNEe2J0bu3ffrh5w {
   							postIcon None
-  							preIcon None
+  							preIcon Erase
   						}
   					generalStyle GeneralStyling _4QgbllFNEe2J0bu3ffrh5w {
   							tallness Fitting
@@ -255,7 +255,7 @@ GUI _OOS-AVFNEe2J0bu3ffrh5w {
   					disabled false
   					icon Icon _6PHdV1FNEe2J0bu3ffrh5w {
   							postIcon None
-  							preIcon None
+  							preIcon Trash
   						}
   					generalStyle GeneralStyling _6PHdVlFNEe2J0bu3ffrh5w {
   							tallness Fitting

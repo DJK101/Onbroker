@@ -38,17 +38,6 @@ GUI _cA-CgVOkEe2KQc5QIsW97w {
   		}
   	}
   	
-  	PrimitiveVariable _qoCZkVOkEe2KQc5QIsW97w at 10,360 size 201,25 {
-  		dataType Boolean
-  		isInput true
-  		name "showResolveButtons"
-  		dfViewWorkaround true
-  		isList false
-  		-PrimitiveRead-> _r---YVOkEe2KQc5QIsW97w  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _sV9T8FOkEe2KQc5QIsW97w
-  		}
-  	}
-  	
   	ComplexVariable _uH6ZwVOkEe2KQc5QIsW97w at 10,320 size 201,25 {
   		expanded false
   		isLive false
@@ -59,6 +48,17 @@ GUI _cA-CgVOkEe2KQc5QIsW97w {
   		isList true
   		-ComplexRead-> _h9u8E1OkEe2KQc5QIsW97w  decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _vSmrQVOkEe2KQc5QIsW97w
+  		}
+  	}
+  	
+  	PrimitiveVariable _-hQIYWDZEe22r-rMCqBFnw at 10,360 size 201,25 {
+  		dataType Boolean
+  		isInput true
+  		name "showResolveButtons"
+  		dfViewWorkaround true
+  		isList false
+  		-PrimitiveRead-> __bbRoWDZEe22r-rMCqBFnw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id __50d0WDZEe22r-rMCqBFnw
   		}
   	}
   }
@@ -72,7 +72,7 @@ GUI _cA-CgVOkEe2KQc5QIsW97w {
   			attributes [  ]
   			marginTop None
   		}
-  	Badge _h9uU2lOkEe2KQc5QIsW97w at 10,30 size 200,48 {
+  	Badge _h9uU2lOkEe2KQc5QIsW97w at 10,30 size 200,54 {
   		color Default
   		content [ StaticContent _h9uU4FOkEe2KQc5QIsW97w {
   				renderMarkdown false
@@ -216,7 +216,7 @@ GUI _cA-CgVOkEe2KQc5QIsW97w {
   		MoveDown _h9vi-VOkEe2KQc5QIsW97w at 2,10 size 14,7 {
   		}
   		
-  		PrimitiveInputPort _r---YVOkEe2KQc5QIsW97w at 5,85 size 90,18 {
+  		PrimitiveInputPort __bbRoWDZEe22r-rMCqBFnw at 5,85 size 90,18 {
   			dataType Boolean
   			isList false
   			name "showResolveButtons"

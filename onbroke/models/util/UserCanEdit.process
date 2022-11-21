@@ -1,0 +1,275 @@
+Process _MJI3MWDWEe22r-rMCqBFnw {
+  modelName "UserCanEdit"
+  description "UserCanEdit"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  DataContext _MWevoWDWEe22r-rMCqBFnw at 30,162 size 210,581 {
+  	dfViewWorkaround true
+  	ComplexVariable _TI4QgWDWEe22r-rMCqBFnw at 10,68 size 190,213 {
+  		expanded true
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		name "user"
+  		dfViewWorkaround true
+  		isList false
+  		ComplexAttribute _vbWCwWDlEe22r-rMCqBFnw at 10,23 size 170,25 {
+  			libraryComponentUID "_fPY24MwNEeWZVvvwxpYu8A"
+  			dfViewWorkaround true
+  		}
+  		
+  		ComplexAttribute _vbWp0WDlEe22r-rMCqBFnw at 10,50 size 170,25 {
+  			libraryComponentUID "_vk0f0FE3Ee2Vgcav4Znc_w"
+  			dfViewWorkaround true
+  		}
+  		
+  		ComplexAttribute _vbXQ4WDlEe22r-rMCqBFnw at 10,77 size 170,25 {
+  			libraryComponentUID "_STDz8VFNEe2J0bu3ffrh5w"
+  			dfViewWorkaround true
+  		}
+  		
+  		ComplexAttribute _vbXQ42DlEe22r-rMCqBFnw at 10,104 size 170,25 {
+  			libraryComponentUID "_T0OEsVFNEe2J0bu3ffrh5w"
+  			dfViewWorkaround true
+  		}
+  		
+  		PrimitiveAttribute _vbX382DlEe22r-rMCqBFnw at 10,131 size 170,25 {
+  			libraryComponentUID "_KAc-cUIAEe26p7mBymqW2w"
+  			dfViewWorkaround true
+  			-PrimitiveRead-> _rg5mcWDlEe22r-rMCqBFnw via (279,372) (279,458) decorate "" at (0,0) {
+  				id _xjVqAGDlEe22r-rMCqBFnw
+  				dfViewWorkaround true
+  			}
+  		}
+  		
+  		PrimitiveAttribute _vbYfAWDlEe22r-rMCqBFnw at 10,158 size 170,25 {
+  			libraryComponentUID "_Ljih0UIAEe26p7mBymqW2w"
+  			dfViewWorkaround true
+  		}
+  		
+  		ComplexAttribute _BJmeIWDvEe2nlqfGLqvTsg at 10,185 size 170,25 {
+  			libraryComponentUID "_i1YwAWCyEe22r-rMCqBFnw"
+  			dfViewWorkaround true
+  		}
+  	}
+  	
+  	ComplexVariable _v_m-sWDrEe22r-rMCqBFnw at 10,419 size 190,132 {
+  		expanded true
+  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  		name "comment"
+  		dfViewWorkaround true
+  		isList true
+  		PrimitiveAttribute __iZXIGDrEe22r-rMCqBFnw at 10,23 size 170,25 {
+  			libraryComponentUID "_R8eqoGDdEe22r-rMCqBFnw"
+  			dfViewWorkaround true
+  			-PrimitiveRead-> _rg8pwWDlEe22r-rMCqBFnw via (134,476) decorate "" at (0,0) {
+  				id _AE9RoWDsEe22r-rMCqBFnw
+  				dfViewWorkaround true
+  			}
+  		}
+  		
+  		ComplexListAttribute _URx60WDtEe2nlqfGLqvTsg at 10,77 size 170,25 {
+  			attributeName last
+  			libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  			dfViewWorkaround true
+  		}
+  		
+  		ComplexListAttribute _UR2MQWDtEe2nlqfGLqvTsg at 10,50 size 170,25 {
+  			attributeName first
+  			libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  			dfViewWorkaround true
+  		}
+  		
+  		PrimitiveListAttribute _UR_WMWDtEe2nlqfGLqvTsg at 10,104 size 170,25 {
+  			attributeName size
+  			primitiveType Integer
+  			libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  StartSIB _MWfWsWDWEe22r-rMCqBFnw at 330,20 size 100,90 {
+  	ComplexOutputPort _6dM-8WDrEe22r-rMCqBFnw at 5,67 size 90,18 {
+  		libraryComponentUID "_uaBIIVN9Ee2KQc5QIsW97w"
+  		isList true
+  		name "comment"
+  		-ComplexUpdate-> _v_m-sWDrEe22r-rMCqBFnw via (1,96) (1,631) decorate "" at (0,0) {
+  			id _84JXYWDrEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _M_dbMWDWEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _NNNjUWDWEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _MWfWs2DWEe22r-rMCqBFnw at 330,910 size 100,90 {
+  	branchName "success"
+  	PrimitiveInputPort _P--JMWDqEe22r-rMCqBFnw at 5,67 size 90,18 {
+  		dataType Boolean
+  		isList false
+  		name "editResult"
+  	}
+  }
+  
+  RetrieveCurrentUserSIB _M_dbMWDWEe22r-rMCqBFnw at 320,155 size 120,65 {
+  	libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  	label "Retrieve Current User"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _M_eCQWDWEe22r-rMCqBFnw   {
+  		id _M_epUWDWEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _M_gegWDWEe22r-rMCqBFnw   {
+  		id _M_hFkWDWEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _M_eCQWDWEe22r-rMCqBFnw at 320,290 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _M_fQYWDWEe22r-rMCqBFnw at 5,27 size 110,18 {
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		isList false
+  		name "currentUser"
+  		-ComplexUpdate-> _TI4QgWDWEe22r-rMCqBFnw  decorate "" at (0,0) {
+  			id _UQRWYWDWEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _rg2jIWDlEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _r06uoWDlEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _M_gegWDWEe22r-rMCqBFnw at 600,175 size 120,25 {
+  	name "not authenticated"
+  	-ControlFlow-> _MWfWs2DWEe22r-rMCqBFnw via (660,550) (660,955) decorate "" at (0,0) {
+  		id _u5JScWDWEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  AtomicSIB _rg2jIWDlEe22r-rMCqBFnw at 320,382 size 120,108 {
+  	libraryComponentUID "common.TextEquals"
+  	label "TextEquals"
+  	ignoredBranch [ IgnoreBranch _rg4YUGDlEe22r-rMCqBFnw {
+  			name "noresult"
+  		}, IgnoreBranch _rg4_YGDlEe22r-rMCqBFnw {
+  			name "failure"
+  		} ]
+  	PrimitiveInputPort _rg5mcWDlEe22r-rMCqBFnw at 5,67 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "a"
+  	}
+  	
+  	PrimitiveInputPort _rg8pwWDlEe22r-rMCqBFnw at 5,85 size 110,18 {
+  		dataType Text
+  		isList false
+  		name "b"
+  	}
+  	-BranchConnector-> _rg-e8WDlEe22r-rMCqBFnw   {
+  		id _rg_GAWDlEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _rhAUIWDlEe22r-rMCqBFnw via (529,436)  {
+  		id _rhA7MWDlEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _rg-e8WDlEe22r-rMCqBFnw at 320,540 size 120,25 {
+  	name "true"
+  	-ControlFlow-> _SVvMQGDqEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _ViA7AWDqEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _rhAUIWDlEe22r-rMCqBFnw at 470,540 size 120,25 {
+  	name "false"
+  	-ControlFlow-> _bA-WsWDtEe2nlqfGLqvTsg  decorate "" at (0,0) {
+  		id _jqOrgWDtEe2nlqfGLqvTsg
+  		concurrent true
+  	}
+  }
+  
+  PutToContextSIB _SVvMQGDqEe22r-rMCqBFnw at 320,640 size 120,90 {
+  	label "PutToContext"
+  	ignoredBranch [  ]
+  	BooleanInputStatic _WwmOAWDqEe22r-rMCqBFnw at 5,67 size 110,18 {
+  		value true
+  		name "true"
+  	}
+  	-BranchConnector-> _SV-c0WDqEe22r-rMCqBFnw   {
+  		id _SWDVUWDqEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  Branch _SV-c0WDqEe22r-rMCqBFnw at 320,750 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _fRLvAWDqEe22r-rMCqBFnw at 5,27 size 110,18 {
+  		dataType Boolean
+  		isList false
+  		name "true"
+  		-PrimitiveUpdate-> _ig060WDqEe22r-rMCqBFnw via (275,785) (275,985) decorate "" at (0,0) {
+  			id _ig-EwWDqEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _MWfWs2DWEe22r-rMCqBFnw  decorate "" at (0,0) {
+  		id _t0dLMWDqEe22r-rMCqBFnw
+  		concurrent true
+  	}
+  }
+  
+  PutToContextSIB _bA-WsWDtEe2nlqfGLqvTsg at 470,640 size 120,90 index 12 {
+  	label "PutToContext"
+  	ignoredBranch [  ]
+  	BooleanInputStatic _ejPjkWDtEe2nlqfGLqvTsg at 5,67 size 110,18 {
+  		value false
+  		name "text"
+  	}
+  	-BranchConnector-> _bBGSgWDtEe2nlqfGLqvTsg   {
+  		id _bBKj8WDtEe2nlqfGLqvTsg
+  		concurrent true
+  	}
+  }
+  
+  DataContext _igyekGDqEe22r-rMCqBFnw at 300,910 size 30,90 index 11 {
+  	dfViewWorkaround true
+  	PrimitiveVariable _ig060WDqEe22r-rMCqBFnw at 10,71 size 10,10 {
+  		dataType Boolean
+  		name "editResult_P--JMWDqEe22r-rMCqBFnw"
+  		dfViewWorkaround true
+  		isList false
+  		-PrimitiveRead-> _P--JMWDqEe22r-rMCqBFnw  decorate "" at (0,0) {
+  			id _ig_S4WDqEe22r-rMCqBFnw
+  			dfViewWorkaround true
+  		}
+  	}
+  }
+  
+  Branch _bBGSgWDtEe2nlqfGLqvTsg at 470,750 size 120,50 {
+  	name "success"
+  	PrimitiveOutputPort _cSaJYWDtEe2nlqfGLqvTsg at 5,27 size 110,18 {
+  		dataType Boolean
+  		isList false
+  		name "text"
+  		-PrimitiveUpdate-> _ig060WDqEe22r-rMCqBFnw via (529,851) (314,851) decorate "" at (0,0) {
+  			id _dSKgwWDuEe2nlqfGLqvTsg
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _MWfWs2DWEe22r-rMCqBFnw via (529,955) decorate "" at (0,0) {
+  		id _gMh1kWDtEe2nlqfGLqvTsg
+  		concurrent true
+  	}
+  }
+}

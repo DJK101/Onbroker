@@ -4,7 +4,7 @@ GUI _zSAVgVOjEe2KQc5QIsW97w {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "BiddingDetails"
-  DataContext _zSA8kVOjEe2KQc5QIsW97w at 20,10 size 221,1335 {
+  DataContext _zSA8kVOjEe2KQc5QIsW97w at 20,10 size 221,1075 {
   	dfViewWorkaround true
   	ComplexVariable _4e2N0VOjEe2KQc5QIsW97w at 10,90 size 201,51 {
   		expanded false
@@ -100,6 +100,17 @@ GUI _zSAVgVOjEe2KQc5QIsW97w {
   		dfViewWorkaround true
   		isList false
   	}
+  	
+  	PrimitiveVariable _QBwboGDjEe22r-rMCqBFnw at 60,1020 size 140,25 {
+  		dataType Boolean
+  		isInput true
+  		name "showResolveButtons"
+  		dfViewWorkaround true
+  		isList false
+  		-PrimitiveRead-> _S6VyUWDjEe22r-rMCqBFnw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _Tcy_IWDjEe22r-rMCqBFnw
+  		}
+  	}
   }
   
   Template _zSCKsVOjEe2KQc5QIsW97w at 300,10 size 370,1335 {
@@ -149,7 +160,7 @@ GUI _zSAVgVOjEe2KQc5QIsW97w {
   						renderMarkdown false
   						maxChars 0
   						html false
-  						rawContent "Bidding for: {{bidding.offer.title}}"
+  						rawContent "Bidding · {{bidding.title}}"
   					} ]
   				generalStyle GeneralStyling _5rC7ZVOjEe2KQc5QIsW97w {
   						tallness Fitting
@@ -546,8 +557,9 @@ GUI _zSAVgVOjEe2KQc5QIsW97w {
   			MoveDown _C19WK1OlEe2KQc5QIsW97w at 2,10 size 14,7 {
   			}
   			
-  			BooleanInputStatic _C19WLlOlEe2KQc5QIsW97w at 5,85 size 90,18 {
-  				value false
+  			PrimitiveInputPort _S6VyUWDjEe22r-rMCqBFnw at 5,85 size 90,18 {
+  				dataType Boolean
+  				isList false
   				name "showResolveButtons"
   			}
   		}

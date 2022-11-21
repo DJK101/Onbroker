@@ -4,7 +4,7 @@ GUI _fcOIkVN8Ee2KQc5QIsW97w {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "OfferDetails"
-  DataContext _fcRL4VN8Ee2KQc5QIsW97w at 18,10 size 221,1335 {
+  DataContext _fcRL4VN8Ee2KQc5QIsW97w at 18,10 size 221,995 {
   	dfViewWorkaround true
   	ComplexVariable _kWGooFN8Ee2KQc5QIsW97w at 10,90 size 201,61 {
   		expanded false
@@ -99,6 +99,17 @@ GUI _fcOIkVN8Ee2KQc5QIsW97w {
   		name "preference"
   		dfViewWorkaround true
   		isList false
+  	}
+  	
+  	PrimitiveVariable _t5-EsGDnEe22r-rMCqBFnw at 22,940 size 140,25 {
+  		dataType Boolean
+  		isInput true
+  		name "showResolveButtons"
+  		dfViewWorkaround true
+  		isList false
+  		-PrimitiveRead-> _wbpXQGDnEe22r-rMCqBFnw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _w5IkgWDnEe22r-rMCqBFnw
+  		}
   	}
   }
   
@@ -546,8 +557,9 @@ GUI _fcOIkVN8Ee2KQc5QIsW97w {
   			MoveDown _ye_HsVOkEe2KQc5QIsW97w at 2,10 size 14,7 {
   			}
   			
-  			BooleanInputStatic _zlh5AVOkEe2KQc5QIsW97w at 5,85 size 90,18 {
-  				value false
+  			PrimitiveInputPort _wbpXQGDnEe22r-rMCqBFnw at 5,85 size 90,18 {
+  				dataType Boolean
+  				isList false
   				name "showResolveButtons"
   			}
   		}
